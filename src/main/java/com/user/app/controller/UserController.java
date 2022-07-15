@@ -16,12 +16,17 @@ import org.springframework.web.bind.annotation.RestController;
 import com.user.app.model.User;
 import com.user.app.service.UserService;
 
-@RestController
+@RestController  
 @RequestMapping("user")
 public class UserController {
 
 	@Autowired
 	private UserService userService;
+	
+	@RequestMapping("/test")
+	public String test() {
+		return "RequestMapping Test.";
+	}
 	
 	@GetMapping
 	public List<User> findAll(){
