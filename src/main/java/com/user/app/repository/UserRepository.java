@@ -14,9 +14,12 @@ public class UserRepository {
 	private static List<User> userList = new ArrayList<User>();
 	
 	static {
-		userList.add(new User(1L, "Ram Singh", "ramsingh", "Ram@12345", new Date(), "ram.singh002@yahoo.com", 9887123638L, new Date(), new Date(), true));
-		userList.add(new User(2L, "Kiran Saini", "kiran", "Krn@67890", new Date(), "kiransaini@gmail.com", 8608549414L, new Date(), new Date(), true));
-		userList.add(new User(3L, "Mamta Mitawa", "mamta.m", "Mamta@135", new Date(), "mamta.m@gmail.com", 9887876388L, new Date(), new Date(), true));
+		userList.add(new User(1L, "Ram Singh", "ramsingh", "Ram@12345", new Date(), "ram.singh002@yahoo.com", 9887123638L, 
+				new Date(), new Date(), true));
+		userList.add(new User(2L, "Kiran Saini", "kiran", "Krn@67890", new Date(), "kiransaini@gmail.com", 8608549414L, 
+				new Date(), new Date(), true));
+		userList.add(new User(3L, "Mamta Mitawa", "mamta.m", "Mamta@135", new Date(), "mamta.m@gmail.com", 9887876388L, 
+				new Date(), new Date(), true));
 	}
 	
 	public List<User> findAll(){	
