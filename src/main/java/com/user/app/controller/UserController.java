@@ -25,7 +25,7 @@ public class UserController {
 	
 	@RequestMapping("/test")
 	public String test() {
-		return "RequestMapping Test.";
+		return "RequestMapping Annotation Test.";
 	}
 	
 	@GetMapping
